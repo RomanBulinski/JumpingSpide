@@ -4,10 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MainTest {
 
-    @Test
-    public void example() {
-        assertEquals(4.63522d, Main.spiderToFly("H3", "E2"), 1e-3d);
-    }
 
     @Test
     public void same() {
@@ -30,11 +26,13 @@ public class MainTest {
 
     @Test
     public void radial4() {
-        assertEquals( Math.sqrt(2), Main.spiderToFly("A1", "C1"), 1e-3d);
-        assertEquals( Math.sqrt(8), Main.spiderToFly("B2", "D2"), 1e-3d);
+        assertEquals(Math.sqrt(2), Main.spiderToFly("A1", "C1"), 1e-3d);
+        assertEquals(Math.sqrt(8), Main.spiderToFly("B2", "D2"), 1e-3d);
     }
 
+    @Test
+    public void example() {
+        assertEquals(4.63522d, Main.spiderToFly("H3", "E2"), 1e-3d);
 
-
-
+    }
 }
