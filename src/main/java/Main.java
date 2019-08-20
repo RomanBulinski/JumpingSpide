@@ -1,3 +1,5 @@
+import static java.lang.Math.sqrt;
+
 public class Main {
 
 
@@ -20,7 +22,21 @@ public class Main {
         int indexLetter1 = abc.indexOf(letter1);
         int indexLetter2 = abc.indexOf(letter2);
 
+        int substratcion = -1;
 
+        if (indexLetter1 > indexLetter2) {
+            substratcion = indexLetter1 - indexLetter2;
+        }else if(indexLetter1 < indexLetter2){
+            substratcion = indexLetter2 - indexLetter1;
+        }
+
+        if(substratcion == 2 || substratcion==6){
+            return Math.sqrt( Math.pow ( i1,2 ) + Math.pow( i2,2  ) );
+        }
+
+        if(substratcion == 4 ){
+            return i1 + i2;
+        }
 
 
 

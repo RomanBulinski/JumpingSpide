@@ -28,5 +28,13 @@ public class MainTest {
         assertEquals(7d, Main.spiderToFly("G4", "C3"), 1e-3d);
     }
 
+    @Test
+    public void radial4() {
+        assertEquals( Math.sqrt(2), Main.spiderToFly("A1", "C1"), 1e-3d);
+        assertEquals( Math.sqrt(8), Main.spiderToFly("B2", "D2"), 1e-3d);
+    }
+
+
+
 
 }
