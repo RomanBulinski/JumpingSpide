@@ -33,6 +33,25 @@ public class MainTest {
     @Test
     public void example() {
         assertEquals(4.63522d, Main.spiderToFly("H3", "E2"), 1e-3d);
-
     }
+
+    @Test
+    public void example10() {
+        assertEquals(3.77394d, Main.spiderToFly("H1", "E3"), 1e-3d);
+    }
+
+
+
+//    Random test #1: spider=B3, fly=B2 => distance=1.00000
+//    Random test #2: spider=B1, fly=A0 => distance=1.00000
+//    Random test #3: spider=F1, fly=D4 => distance=4.12311
+//    Random test #4: spider=B3, fly=E2 => distance=4.63522
+//    Random test #5: spider=A0, fly=A4 => distance=4.00000
+//    Random test #6: spider=A0, fly=C3 => distance=3.00000
+//    Random test #7: spider=H1, fly=E3 => distance=3.77394
+//
+//    expected:<3.773942326946622> but was:<3.0>
+
+
+
 }
